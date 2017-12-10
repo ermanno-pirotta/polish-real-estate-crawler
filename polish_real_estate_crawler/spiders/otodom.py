@@ -2,7 +2,6 @@
 import scrapy
 import re
 import locale
-import sys
 from polish_real_estate_crawler.spiders.realEstateCrawler import RealEstateCrawler
 
 class OtodomSpider(RealEstateCrawler):

@@ -28,14 +28,6 @@ class RealEstateCrawler(scrapy.Spider):
         else :
             return '0'
 
-    def extract_number(self, field):
-        field_with_no_spaces = str(field).replace(' ', '')
-        match = re.search(r'(\d+,?(\d+)?)+',field_with_no_spaces)
-        if match :
-            return match.group(0)
-        else :
-            return '0'
-
     def extract_size_from_text(self, text):
         match = re.search(r'(?!\d|\\.)*(\d* m²)',text)
         if match :

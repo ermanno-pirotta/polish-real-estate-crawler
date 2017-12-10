@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 import scrapy
-import re
 import locale
 import json
 from polish_real_estate_crawler.spiders.realEstateCrawler import RealEstateCrawler
